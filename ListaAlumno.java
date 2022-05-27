@@ -1,46 +1,63 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package TareaRegistroAlumnos;
-import java.util.ArrayList;
- import java.util.List;
-import java.util.Scanner;
-public class ListaAlumno {
- private int indiceVector;
- private String [] vectorNombre;
 
-     public ListaAlumno (){
-      vectorNombre=new String [100];
-       this.indiceVector=0;
-}
+package TareaRegistroAlumnos;
+
+public class ListaAlumno extends ListaCurso{
+  protected String CodigoLista;
+    protected String nombreLista;
+    protected String aliasLista;
+    protected String correoLista;
+     protected Integer telefonoLista;
     
-    List<String>lis_Alumno = new ArrayList<String>();
+    public String getCodigoLista(){
+        
+       return CodigoLista;
+    }
     
+     public void setCodigoLista(String CodigoLista){
+        
+       this.CodigoLista = CodigoLista;
+     }
     
+    public String getNombreLista(){
+       return nombreLista;
+    }
+    
+     public void setNombreLista(String nombreLista){
+        
+       this.nombreLista = nombreLista;
+     }
+     
+      public String getAliasLista(){
+       return aliasLista;
+    }
+    
+     public void setAliasLista(String aliasLista){
+        
+       this.aliasLista = aliasLista;
+     }
+
+    public String getCorreoLista(){
+       return correoLista;
+    }
+    
+     public void setCorreoLista(String correoLista){
+        
+       this.correoLista = correoLista;
+     }
+     
+     public Integer getTelefonoLista(){
+        
+       return telefonoLista;
+    }
+    
+     public void setTelefonoLista(Integer telefonoLista){
+        
+       this.telefonoLista = telefonoLista;
+     }
+
+
+}    
     
         
-     public void registrarnombre(String tipo ){
-        
-        lis_Alumno.add(tipo);
-     }  
-     
-     
-         public void mostrarNombre(){
-      
-            for (int i=1; i<vectorNombre.length;i++){
-                if(vectorNombre[i] != null){
-               
-                    System.out.println("Regitro ="+ vectorNombre[i]);
-                }
-            }
-            System.out.println("");
-            for(String transaccion : vectorNombre){
-                if(transaccion != null){
-                   
-                }   
-            } 
-        }
-     
-     
-}
+   
+  

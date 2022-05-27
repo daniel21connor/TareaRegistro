@@ -17,9 +17,10 @@ public class MenuVectores {
             System.out.println( "5" + " Tabla Grado");
             System.out.println( "6" + " Resultado tabla Grado");
             System.out.println( "7" + " Resultado  de todas las tablas ");
+             System.out.println( "8" + " SAlir ");
             System.out.println("<<<<>>>>>>>>>>>>>>>>>>");
-            System.out.println("2" + " Alumnos de metodo Vectores y matriz");
-             System.out.println("<<<<>>>>>>>>>>>>>>>>>>");
+          
+             
                  opcion = scanner.nextInt();
        switch(opcion){
                
