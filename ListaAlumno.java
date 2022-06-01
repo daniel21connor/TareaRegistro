@@ -1,13 +1,75 @@
 
 package TareaRegistroAlumnos;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class ListaAlumno extends ListaCurso{
   protected String CodigoLista;
     protected String nombreLista;
     protected String aliasLista;
     protected String correoLista;
      protected Integer telefonoLista;
+    static  Scanner scanner=new Scanner (System.in);
+   List<String> lisNombre = new ArrayList<>();
+   List<String> lisAleas = new ArrayList<>();
+     
+   public void code(){
+       System.out.println("aleas");
+       String uwu=scanner.next();
+       lisAleas.add(uwu);
+     }
+
+    public List<String> getLisAleas() {
+        return lisAleas;
+    }
+   
+   
+     public void codeList(){
+       System.out.println("Nombre");
+       String uwu=scanner.next();
+       lisNombre.add(uwu);
+     }
+
+    public List<String> getLisNombre() {
+        return lisNombre;
+    }
+              public void mostrarCodi(){
+      
+            for (int i=1; i<lisAleas.size();i++){
+                if(lisAleas != null){
+               
+                    System.out.println("ALEAS ="+ lisAleas );
+                   
+                }
+            }
+            System.out.println("");
+            for(String transaccion : lisNombre){
+                if(transaccion != null){
+                   
+                }   
+            } 
+        }
     
+    
+     public void mostrarCodigoGrado(){
+      
+            for (int i=1; i<lisNombre.size();i++){
+                if(lisNombre != null){
+               
+                    System.out.println("NOMBRES ="+ lisNombre );
+                   
+                }
+            }
+            System.out.println("");
+            for(String transaccion : lisNombre){
+                if(transaccion != null){
+                   
+                }   
+            } 
+        }
+     
     public String getCodigoLista(){
         
        return CodigoLista;

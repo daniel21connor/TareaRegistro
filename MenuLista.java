@@ -18,25 +18,9 @@ public class MenuLista {
           opcion = scanner.nextInt();
            switch(opcion){
                case 1 :
-        System.out.println("Ingrese el codigo");
-        String codigo=leer.next();
-        datos.setCodigoLista(codigo);
-       
-        System.out.println("Ingrese un nombre");
-        String nombre=leer.next();
-        datos.setNombreLista(nombre);
+        datos.code();
+        datos.codeList();
         
-        System.out.println("Ingrese un alias");
-        String alias=leer.next();
-        datos.setAliasLista(alias);
-        
-        System.out.println("Ingrese un correo");
-        String correo=leer.next();
-        datos.setCorreoLista(correo);
-        
-        System.out.println("Ingrese su telefono");
-        int telefono=leer.nextInt();
-        datos.setTelefonoLista(telefono);
         break;
                case 2:
         System.out.println("Ingrese el codigo del curso");
@@ -55,15 +39,26 @@ public class MenuLista {
         System.out.println("Ingrese Descripcion");
         String descripcion=leer.next();
         datos.setDescripcionLista(descripcion);
-     
+
             break;
                case 4:
           lis_Nombre.add(datos);
         System.out.println("Lista Alumno: " + lis_Nombre.get(0).getCodigoLista()+"**__**" + lis_Nombre.get(0).getNombreLista()+"**__** " + lis_Nombre.get(0).getAliasLista()+"__*** " + lis_Nombre.get(0).getCorreoLista()+"**__** " + lis_Nombre.get(0).getTelefonoLista());
         System.out.println("Lista Curso: " + lis_Nombre.get(0).getCodigoCurso()+"**___*** " + lis_Nombre.get(0).getNombreCurso());
         System.out.println("Lista Grado: " + lis_Nombre.get(0).getCodigoGrado()+"**__**" + lis_Nombre.get(0).getDescripcionLista());   
+              
         
-        }
-}    while (opcion !=5);
+               case 5 :
+                   datos.codeList();
+                   
+               case 6 :
+                datos.mostrarCodigoGrado();
+                datos.mostrarCodi();
+           }
+}    while (opcion !=7);
 }
+    
+    
+    
+   
 }
